@@ -39,16 +39,24 @@ a{
   line-height: 22px;
   color: #fff;
 }
-.phone{
+.menu_tab:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.phone-number{
   font-size: 18px;
   line-height: 29px;
   font-weight: bold;
   color: #fff;
   display: block;
 }
+.phone-number:hover{
+  color: #6EBBD3;
+}
 .phone span{
   display: flex;
   justify-content: flex-end;
+  color: #fff;
   font-size: 13px;
   font-weight: normal;
   line-height: 22px;
@@ -216,6 +224,74 @@ a{
   top: 20px;
   right: 20px;
 }
+.footer{
+  background-color: #1F2021;
+  margin-top: 80px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 91px 80px;
+}
+.buy{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+}
+.hurry-info{
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 28px;
+  line-height: 25px;
+  
+}
+.footer{
+  margin-bottom: 100px;
+}
+.footer-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email{
+  width: 300px;
+  padding: 22px 0 26px 33px;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+.submit{
+  padding: 22px 75px 26px 75px;
+  margin-left: 16px;
+  background-color: #6EBBD3;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;  
+
+}
+.checkbox{
+  margin-top: 24px;
+  width: 18px;
+  height: 18px;
+}
+.checkbox-text{
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  margin-left: 22px;
+  font-size: 14px;
+  line-height: 17px;  
+}
+
+
 
  
 
