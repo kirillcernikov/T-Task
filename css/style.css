@@ -10,8 +10,11 @@ a{
   text-decoration: none;
   color: #fff;
 }
+header{
+  width: 100%;
+}
 .container{
-  margin: 0 auto;
+  margin: auto;
   max-width: 1200px;
 }
 .header{
@@ -25,13 +28,12 @@ a{
   align-items: center;
   padding-top: 24px;
 }
-.logo{
-  display: block;
-}
+
+
 .menu{
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  margin-right: 240px;
+  justify-content: space-around;
 }
 .menu_tab{
   padding-right: 70px;
@@ -139,23 +141,23 @@ a{
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
- }
- .card-text__description{
-   position: relative;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 22px;
- }
- .card-text__description::before{
-   content:"";
-   width: 4px;
-   height: 26px; 
-   background: #6EBBD3;
-   
- }
- 
- .description-info{
+}
+.card-text__description{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+}
+.card-text__description::before{
+  content:"";
+  width: 4px;
+  height: 26px; 
+  background: #6EBBD3;
+
+}
+
+.description-info{
   display: flex;
   font-size: 12px;
   line-height: 15px;
@@ -210,10 +212,10 @@ a{
   transition: 1s;
 }
 .up-to{
-  display: block;
-  position: relative;
-  top: -20px;
-  left: 1140px;
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: 1300px;
   width: 59px;
   height: 59px;
   background-color: #6EBBD3;
@@ -227,6 +229,8 @@ a{
 .footer{
   background-color: #1F2021;
   margin-top: 80px;
+  margin-bottom: 100px;
+  
 }
 .footer-content{
   display: flex;
@@ -247,9 +251,8 @@ a{
   line-height: 25px;
   
 }
-.footer{
-  margin-bottom: 100px;
-}
+  
+
 .footer-form{
   display: flex;
   justify-content: space-between;
@@ -260,7 +263,7 @@ a{
   padding: 22px 0 26px 33px;
   font-size: 14px;
   line-height: 17px;
-  border: none;
+  border: none; 
   outline: none;
   border-radius: 8px;
 }
@@ -292,7 +295,212 @@ a{
 }
 
 
+@media (max-width: 1366px) {
+  .container {
+      width: 1150px;
+  }
+}
 
- 
+@media (max-width: 1200px) {
+  .container {
+      width: 860px;
+  }
+  .sorting-block{
+    text-align: center;
+  }
+  .cards{
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  .buy{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hurry-info{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 18px;
+    
+  }
+  .email{
+    width: 200px;
+  }
+  .submit{
+    padding: 22px 50px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+      width: 750px;
+  }
+  
+  .header{
+    background-size: cover contain ; 
+    background-repeat: no-repeat;
+    
+  }
+
+  
+  .header-menu{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .menu{
+    margin-left: 50px;
+  }
+  .logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .phone{
+    margin-top: 30px;
+  }
+  .phone span{
+    justify-content: center;
+  }
+  .cats_founded{
+    justify-content: center;
+    font-size: 20px;
+  }
+  .card{
+    width: 300px;
+  }
+  .card-image{
+    width: 300px;
+  }
+  .footer-content{
+    padding: 20px;
+  }
+
+}
+@media (max-width: 768px) {
+  .container {
+      max-width: 560px;
+  }
+  .cards{
+    justify-content: center;
+  }
+  .discount{
+    top: 30px;
+    right: 200px;
+  }
+  .show-more{
+    width: 170px;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .footer-content{
+    align-items: center;
+  }
+  .email-form{
+    padding-left: 50px;
+  }
+  .email{
+    padding: 10px;
+    width: 150px;
+    font-size: 10px;
+  }
+  .submit{
+    padding: 10px;
+    font-size: 10px;
+  }
+  .checkbox{
+    margin-top: 24px;
+    width: 13px;
+    height: 13px;
+  }
+  .checkbox-text{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin-left: 22px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 579px) {
+  .container {
+      width: 400px;
+  }
+  .header{
+    background: #999999;
+  }
+  .logo{
+    margin-top: 0px;
+  }
+  .cats_founded{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .discount{
+    top: 30px;
+    right: 200px;
+  }
+  
+  .footer{
+    margin-top: 30px;
+  }
+  .footer-form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .email{
+    width: 150px;
+  }
+  .submit{
+    width: 150px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .checkbox-text{
+    top: -21px;
+  }
+}
+@media (max-width: 480px){
+  .container{
+    width: 90%;
+  }
+  .menu{
+    display: none;
+  }
+  .menu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cats_founded{
+    font-size: 12px;
+  }
+  
+  
+  .sorting{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .sorting-block select{
+    margin-left: 5px;
+  }
+  
+  .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .email-form{
+    padding-top: 20px;
+    margin-left: -40px;
+  }
+  
+  .checkbox-text{
+    top: -3px;
+  }
+}
+
 
 
